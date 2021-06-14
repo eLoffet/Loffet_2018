@@ -17,6 +17,7 @@ bg_symbols <- mapIds(org.Hs.eg.db,
                      multiVals="first")
 
 toppgene_tout <- read.csv("GOtoppgene_reslfc1_de_df_test.txt", sep="\t", head=T)
+terms <- toppgene_tout[,c(1,2,3,5,11)]
 
 genes <- reslfc1_pourGO[,c("symbol","log2FoldChange")]
 colnames(genes) <- c("ID","logFC") #est-ce qu'il faut changer log2FC en log FC ?
