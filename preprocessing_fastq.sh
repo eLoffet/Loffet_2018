@@ -1,6 +1,7 @@
 ### quality control with fastqc
 for i in *.fastq.gz; do 
 fastqc $i
+done
 
 ###cut adapter sequences from reads with cutadapt
 #single read data:
